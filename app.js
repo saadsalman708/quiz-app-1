@@ -1,114 +1,244 @@
 let quesArray = [
+    // {
+    //     question: "In a switch statement, why do most case clauses end with a break statement?",
+    //     Option: {
+    //         a: "",
+    //         b: "",
+    //         c: "",
+    //         d: ""
+    //     },
+    //     answer: ""
+    // },
     {
-        num: 1,
-        question: "JavaScript mein variable declare karne ke liye kaunsa keyword use hota hai?",
+        question: "In a switch statement, why do most case clauses end with a break statement?",
         Option: {
-            a: "var",
-            b: "int",
-            c: "string",
-            d: "float"
+            a: "To exit the entire function immediately",
+            b: "To prevent fall-through and stop executing subsequent cases",
+            c: "To reset all variables used inside the switch",
+            d: "Because break is required after every statement in JS"
         },
-        answer: "var"
+        answer: "To prevent fall-through and stop executing subsequent cases"
     },
+
     {
-        num: 2,
-        question: "JavaScript ka kaunsa data type nahi hai?",
+        question: "Which clause acts like an else in an if...else chain inside a switch?",
         Option: {
-            a: "Number",
-            b: "Boolean",
-            c: "Float",
-            d: "String"
+            a: "case else",
+            b: "fallback",
+            c: "default",
+            d: "catch"
         },
-        answer: "Float"
+        answer: "default"
     },
+
     {
-        num: 3,
-        question: "JavaScript code ko HTML mein add karne ke liye kaunsa tag use hota hai?",
+        question: "Given: switch(x) { case 1: a(); case 2: b(); default: c(); } Which functions run if x === 1?",
         Option: {
-            a: "js",
-            b: "javascript",
-            c: "script",
-            d: "code"
+            a: "a() only",
+            b: "a() then b() then c()",
+            c: "a() then b()",
+            d: "b() then c()"
         },
-        answer: "script"
+        answer: "a() then b() then c()"
     },
+
     {
-        num: 4,
-        question: "JavaScript mein array index kis se start hota hai?",
+        question: "Which of these is a key difference between for and while loops?",
         Option: {
-            a: "1",
-            b: "0",
-            c: "-1",
-            d: "2"
+            a: "for loops cannot use break",
+            b: "while loops check the condition before running the block",
+            c: "while loops always run at least once",
+            d: "for loops only iterate arrays"
         },
-        answer: "0"
+        answer: "while loops check the condition before running the block"
     },
+
     {
-        num: 5,
-        question: "JavaScript mein function ka correct syntax kaunsa hai?",
+        question: "Convert this for-loop to an equivalent while-loop: for(var i=0;i<3;i++){doStuff();}",
         Option: {
-            a: "function myFunc() {}",
-            b: "def myFunc() {}",
-            c: "func myFunc() {}",
-            d: "create myFunc() {}"
+            a: "var i=0; while(i<3){ doStuff(); i++; }",
+            b: "while(var i=0;i<3){doStuff();}",
+            c: "var i=0; do { doStuff(); i++; } while(i<3);",
+            d: "var i=0; while(i++<3) doStuff();"
         },
-        answer: "function myFunc() {}"
+        answer: "var i=0; while(i<3){ doStuff(); i++; }"
     },
+
     {
-        num: 6,
-        question: "JavaScript mein === operator ka kya kaam hai?",
+        question: "What happens if you forget to increment a counter inside a while loop that depends on it?",
         Option: {
-            a: "Value compare karta hai",
-            b: "Type compare karta hai",
-            c: "Value aur type dono compare karta hai",
-            d: "Assignment karta hai"
+            a: "Loop ends immediately",
+            b: "Infinite loop (unless broken)",
+            c: "Counter magically increments",
+            d: "The browser throws a syntax error"
         },
-        answer: "Value aur type dono compare karta hai"
+        answer: "Infinite loop (unless broken)"
     },
+
     {
-        num: 7,
-        question: "JavaScript mein object kaise banaya jata hai?",
-        Option: {
-            a: "var obj = {}",
-            b: "var obj = []",
-            c: "var obj = ()",
-            d: "var obj = <>"
-        },
-        answer: "var obj = {}"
-    },
-    {
-        num: 8,
-        question: "JavaScript mein kaunsa loop nahi hota?",
+        question: "Which loop guarantees its body runs at least once?",
         Option: {
             a: "for",
             b: "while",
-            c: "foreach",
-            d: "do-while"
+            c: "do...while",
+            d: "none of them"
         },
-        answer: "foreach"
+        answer: "do...while"
     },
+
     {
-        num: 9,
-        question: "JavaScript mein null ka matlab kya hota hai?",
+        question: "Which line completes a do...while so it runs while i <= 3?",
         Option: {
-            a: "Undefined value",
-            b: "Empty string",
-            c: "No value",
-            d: "Zero"
+            a: "} until (i <= 3);",
+            b: "} while (i <= 3);",
+            c: "} end (i <= 3);",
+            d: "} when (i <= 3);"
         },
-        answer: "No value"
+        answer: "} while (i <= 3);"
     },
+
     {
-        num: 10,
-        question: "JavaScript mein console.log() ka use kya hai?",
+        question: "Given: var i = 0; do { i++; } while (i < 0); How many times does the loop body run?",
         Option: {
-            a: "Data store karna",
-            b: "Output print karna",
-            c: "HTML create karna",
-            d: "Function call karna"
+            a: "0",
+            b: "1",
+            c: "Infinite",
+            d: "2"
         },
-        answer: "Output print karna"
+        answer: "1"
     },
+
+    {
+        question: "Placing a <script> tag at the end of <body> vs in <head> primarily affects:",
+        Option: {
+            a: "How many functions you can declare",
+            b: "When DOM elements are available to script",
+            c: "Whether JS is allowed",
+            d: "The language version used"
+        },
+        answer: "When DOM elements are available to script"
+    },
+
+    {
+        question: "What attribute lets an external script load without blocking HTML parsing?",
+        Option: {
+            a: "async or defer",
+            b: "blocking",
+            c: "lazyload",
+            d: "deferOnly"
+        },
+        answer: "async or defer"
+    },
+
+    {
+        question: "Why prefer external .js files over inline scripts for production?",
+        Option: {
+            a: "Faster JS engine",
+            b: "Better caching and separation of concerns",
+            c: "JS won't run inline",
+            d: "They reduce file size always"
+        },
+        answer: "Better caching and separation of concerns"
+    },
+
+    {
+        question: "Which of the following is a single-line comment in JavaScript?",
+        Option: {
+            a: "/* comment */",
+            b: "<!-- comment -->",
+            c: "// comment",
+            d: "# comment"
+        },
+        answer: "// comment"
+    },
+
+    {
+        question: "Why write comments in code?",
+        Option: {
+            a: "They make the code run faster",
+            b: "They explain intent and help others (and future you)",
+            c: "They are executed only in dev builds",
+            d: "They are required by browsers"
+        },
+        answer: "They explain intent and help others (and future you)"
+    },
+
+    {
+        question: "Which comment type can span multiple lines?",
+        Option: {
+            a: "// only",
+            b: "/* ... */",
+            c: "<!-- -->",
+            d: "// ... //"
+        },
+        answer: "/* ... */"
+    },
+
+    {
+        question: "Which event fires when a link is clicked (and before navigation)?",
+        Option: {
+            a: "onhover",
+            b: "onsubmit",
+            c: "onclick / click",
+            d: "onchange"
+        },
+        answer: "onclick / click"
+    },
+
+    {
+        question: "How do you prevent a link from navigating to its href in a click handler?",
+        Option: {
+            a: "return false from handler or event.preventDefault()",
+            b: "set link.disabled = true",
+            c: "change href to \"#\" only",
+            d: "you cannot prevent navigation"
+        },
+        answer: "return false from handler or event.preventDefault()"
+    },
+
+    {
+        question: "Which is better: inline onclick=\"...\" or element.addEventListener(\"click\", fn)?",
+        Option: {
+            a: "Inline is better for separation of concerns",
+            b: "addEventListener is preferable for multiple handlers & separation",
+            c: "Both are identical in behavior and style",
+            d: "Inline never works"
+        },
+        answer: "addEventListener is preferable for multiple handlers & separation"
+    },
+
+    {
+        question: "Which event is commonly used to respond to a button press?",
+        Option: {
+            a: "onscroll",
+            b: "onclick",
+            c: "oninput",
+            d: "onhover"
+        },
+        answer: "onclick"
+    },
+
+    {
+        question: "When adding a click handler in JS, what must sayHello be?",
+        Option: {
+            a: "A string",
+            b: "A function reference (no parentheses)",
+            c: "A number",
+            d: "Null"
+        },
+        answer: "A function reference (no parentheses)"
+    },
+
+    {
+        question: "Which property sets a button to be disabled?",
+        Option: {
+            a: "disabled = true",
+            b: "enabled = false",
+            c: "setDisabled()",
+            d: "readonly = true"
+        },
+        answer: "disabled = true"
+    }
 ];
 
 
@@ -162,8 +292,6 @@ let wrongAns = 0;
 function loadInput() {
     startPage.classList.add("d-none");
     inputPage.classList.remove("d-none");
-
-    ttlq.textContent = quesArray.length;
 }
 
 
@@ -220,6 +348,10 @@ function loadConfirm() {
 
 
 function loadQuiz() {
+
+        ttlq.textContent = 69;                // just for the meme
+    // ttlq.textContent = quesArray.length;                // just for the meme
+    
     confirmPage.classList.add("d-none");
     quizPage.classList.remove("d-none");
 
@@ -253,7 +385,7 @@ function loadQuiz() {
     // let r1 = Math.floor(Math.random() * 3);
     // let r2 = Math.floor(Math.random() * 3);
     // let r3 = Math.floor(Math.random() * 3);
-    
+
     // let c1 = arr.splice(r1 , 1);
     // let c2 = arr.splice(r2 , 1);
     // let c3 = arr.splice(r3 , 1);
@@ -273,16 +405,16 @@ function loadQuiz() {
     for (let i = arr.length; i > 0; i--) {
 
         let r = Math.floor(Math.random() * i);
-        let copy = arr.slice(0);      
+        let copy = arr.slice(0);
         // let c = arr.splice(r , 1);
         // arr.push(c[0]);
-        
+
         copy[i] = arr[r];
         copy[r] = arr[i];
-        
-        console.log(copy); 
+
+        console.log(copy);
     }
-    
+
 
 
 
