@@ -1,14 +1,14 @@
 let quesArray = [
-    // {
-    //     question: "In a switch statement, why do most case clauses end with a break statement?",
-    //     Option: {
-    //         a: "",
-    //         b: "",
-    //         c: "",
-    //         d: ""
-    //     },
-    //     answer: ""
-    // },
+    {
+        question: "Is that joke good?",
+        Option: {
+            a: "It's amazing",
+            b: "Not Bad",
+            c: "Somewhat",
+            d: "I hate it"
+        },
+        answer: "It's amazing"
+    },
     {
         question: "In a switch statement, why do most case clauses end with a break statement?",
         Option: {
@@ -238,6 +238,521 @@ let quesArray = [
             d: "readonly = true"
         },
         answer: "disabled = true"
+    },
+    {
+        question: "Which event triggers when the mouse pointer moves over an element?",
+        Option: {
+            a: "mousemove",
+            b: "mouseover / mouseenter",
+            c: "mousedrag",
+            d: "mousehold"
+        },
+        answer: "mouseover / mouseenter"
+    },
+
+    {
+        question: "Which event should you use for swapping an image when the user mouses over it?",
+        Option: {
+            a: "onload",
+            b: "onmouseover",
+            c: "onscroll",
+            d: "onchange"
+        },
+        answer: "onmouseover"
+    },
+
+    {
+        question: "What is important to remember about mouse events on touch devices?",
+        Option: {
+            a: "They behave identically",
+            b: "They may not fire; use touch events or pointer events",
+            c: "Touch devices convert clicks to hover",
+            d: "Mouse events are faster"
+        },
+        answer: "They may not fire; use touch events or pointer events"
+    },
+
+    {
+        question: "Which event fires when an input field loses focus?",
+        Option: {
+            a: "onblur",
+            b: "onchange",
+            c: "onfocus",
+            d: "oninput"
+        },
+        answer: "onblur"
+    },
+
+    {
+        question: "Which two events are useful for live validation as the user types?",
+        Option: {
+            a: "onkeyup and onkeypress",
+            b: "oninput and onkeyup",
+            c: "onload and onclick",
+            d: "onblur and onfocus"
+        },
+        answer: "oninput and onkeyup"
+    },
+
+    {
+        question: "What value does a text field have if the user clicks Cancel on a prompt?",
+        Option: {
+            a: "undefined",
+            b: "null",
+            c: "empty string",
+            d: "false"
+        },
+        answer: "null"
+    },
+
+    {
+        question: "How do you read the value of an <input id=\"email\"> element?",
+        Option: {
+            a: "document.getElementById(\"email\").value",
+            b: "document.value(\"email\")",
+            c: "getValue(\"email\")",
+            d: "document.getElementsByName(\"email\")[0].text"
+        },
+        answer: "document.getElementById(\"email\").value"
+    },
+
+    {
+        question: "For a select (dropdown), how do you get the selected option text?",
+        Option: {
+            a: "select.value only",
+            b: "select.options[select.selectedIndex].text",
+            c: "select.selectedText",
+            d: "document.selectedOptionText(select)"
+        },
+        answer: "select.options[select.selectedIndex].text"
+    },
+
+    {
+        question: "Why cast prompt results to number when expecting numeric input?",
+        Option: {
+            a: "prompt already returns numbers",
+            b: "prompt returns strings so numeric math would do concatenation",
+            c: "casting slows code",
+            d: "you cannot cast prompts"
+        },
+        answer: "prompt returns strings so numeric math would do concatenation"
+    },
+
+    {
+        question: "How do you set the value of an input field with id=\"name\"?",
+        Option: {
+            a: "document.getElementById(\"name\").value = \"Saad\";",
+            b: "document.setValue(\"name\",\"Saad\");",
+            c: "document.getElementById(\"name\").innerHTML = \"Saad\";",
+            d: "setValue(\"name\",\"Saad\");"
+        },
+        answer: "document.getElementById(\"name\").value = \"Saad\";"
+    },
+
+    {
+        question: "Which method sets a checkbox checked state?",
+        Option: {
+            a: "checkbox.checked = true",
+            b: "checkbox.value = true",
+            c: "checkbox.setChecked()",
+            d: "checkbox.toggle(true)"
+        },
+        answer: "checkbox.checked = true"
+    },
+
+    {
+        question: "If you want to fill a field and trigger change handlers, what should you do after setting .value programmatically?",
+        Option: {
+            a: "call element.dispatchEvent(new Event(\"change\"))",
+            b: "call element.triggerChange()",
+            c: "call document.refresh()",
+            d: "do nothing; handlers always run"
+        },
+        answer: "call element.dispatchEvent(new Event(\"change\"))"
+    },
+
+    {
+        question: "How do you get the HTML content of the third <p> in a collection p?",
+        Option: {
+            a: "p[2].innerHTML",
+            b: "p[3].innerHTML",
+            c: "p.innerHTML(2)",
+            d: "p.get(2).html"
+        },
+        answer: "p[2].innerHTML"
+    },
+
+    {
+        question: "What property sets only the text content (not HTML) of an element?",
+        Option: {
+            a: "innerText / textContent",
+            b: "innerHTML",
+            c: "outerHTML",
+            d: "value"
+        },
+        answer: "innerText / textContent"
+    },
+
+    {
+        question: "Which is safer to avoid XSS when inserting user text into a paragraph?",
+        Option: {
+            a: "Use innerHTML with sanitized markup",
+            b: "Use textContent (or innerText)",
+            c: "Use outerHTML",
+            d: "Use eval()"
+        },
+        answer: "Use textContent (or innerText)"
+    },
+
+    {
+        question: "To change an <img id=\"i1\"> source, use:",
+        Option: {
+            a: "document.getElementById(\"i1\").src = \"new.jpg\"",
+            b: ".setSource()",
+            c: ".changeSrc()",
+            d: "img.src(\"new.jpg\")"
+        },
+        answer: "document.getElementById(\"i1\").src = \"new.jpg\""
+    },
+
+    {
+        question: "What is a good approach to swap two images on hover for performance?",
+        Option: {
+            a: "preload the swapping images and change src on hover",
+            b: "change the image dimensions instead",
+            c: "use eval() to set new images",
+            d: "replace <img> nodes entirely each time"
+        },
+        answer: "preload the swapping images and change src on hover"
+    },
+
+    {
+        question: "Changing an element's innerHTML that contains images may cause what?",
+        Option: {
+            a: "Images to remain same",
+            b: "Existing image elements to be recreated (losing JS state)",
+            c: "Faster rendering always",
+            d: "No change in DOM"
+        },
+        answer: "Existing image elements to be recreated (losing JS state)"
+    },
+
+    {
+        question: "Which event pair is commonly used to swap an image when the pointer enters/leaves an image?",
+        Option: {
+            a: "mouseover / mouseout",
+            b: "mousedown / mouseup",
+            c: "onload / onunload",
+            d: "mouseenter / leave"
+        },
+        answer: "mouseover / mouseout"
+    },
+
+    {
+        question: "Which method adds a class to an element without overwriting its existing classes?",
+        Option: {
+            a: "el.className = \"new\"",
+            b: "el.setClass(\"new\")",
+            c: "el.classList.add(\"new\")",
+            d: "addClass(el,\"new\")"
+        },
+        answer: "el.classList.add(\"new\")"
+    },
+
+    {
+        question: "Which is the JS property to change inline style of an element?",
+        Option: {
+            a: "element.style.backgroundColor = \"red\"",
+            b: "element.css(\"background-color\",\"red\")",
+            c: "element.setStyle(\"background\",\"red\")",
+            d: "element.style(\"backgroundColor\",\"red\")"
+        },
+        answer: "element.style.backgroundColor = \"red\""
+    },
+
+    {
+        question: "What does document.getElementsByTagName(\"p\") return?",
+        Option: {
+            a: "An array of <p> nodes",
+            b: "A live HTMLCollection of <p> elements",
+            c: "A NodeList snapshot",
+            d: "Always null"
+        },
+        answer: "A live HTMLCollection of <p> elements"
+    },
+
+    {
+        question: "Which node is at the top of the DOM hierarchy for a webpage?",
+        Option: {
+            a: "html",
+            b: "body",
+            c: "document",
+            d: "head"
+        },
+        answer: "document"
+    },
+
+    {
+        question: "Which API method creates a new element node (not yet in DOM)?",
+        Option: {
+            a: "document.createElement(\"div\")",
+            b: "document.newElement(\"div\")",
+            c: "document.insert(\"div\")",
+            d: "create(\"div\")"
+        },
+        answer: "document.createElement(\"div\")"
+    },
+
+    {
+        question: "Which property returns the number of child nodes of an element?",
+        Option: {
+            a: "childrenCount",
+            b: "childNodes.length",
+            c: "childCount",
+            d: "node.children.lengthOnly"
+        },
+        answer: "childNodes.length"
+    },
+
+    {
+        question: "Which approach is recommended when counting element children and avoiding whitespace text nodes?",
+        Option: {
+            a: "Use nodeType checks or element.children / firstElementChild",
+            b: "Remove all whitespace from HTML",
+            c: "Assume no text nodes exist",
+            d: "Use innerText to count elements"
+        },
+        answer: "Use nodeType checks or element.children / firstElementChild"
+    },
+    {
+        question: "Which modern query allows complex CSS selectors for scoped search?",
+        Option: {
+            a: "getElementByClassName",
+            b: "querySelector / querySelectorAll",
+            c: "getScopedElements",
+            d: "scopedQuery"
+        },
+        answer: "querySelector / querySelectorAll"
+    },
+
+    {
+        question: "Which is true about getElementsByTagName vs querySelectorAll?",
+        Option: {
+            a: "getElementsByTagName returns NodeList snapshot",
+            b: "querySelectorAll returns static NodeList while getElementsByTagName returns live HTMLCollection",
+            c: "Both always return arrays",
+            d: "querySelectorAll is slower and always wrong"
+        },
+        answer: "querySelectorAll returns static NodeList while getElementsByTagName returns live HTMLCollection"
+    },
+
+    {
+        question: "What are the three basic node types commonly seen in the DOM?",
+        Option: {
+            a: "document, style, script",
+            b: "element, text, document",
+            c: "object, array, string",
+            d: "node, token, tree"
+        },
+        answer: "element, text, document"
+    },
+
+    {
+        question: "If div contains two <p> elements, those <p> nodes are called what relative to div?",
+        Option: {
+            a: "parents",
+            b: "children",
+            c: "siblings",
+            d: "ancestors"
+        },
+        answer: "children"
+    },
+
+    {
+        question: "In the DOM, what is the parent of <body>?",
+        Option: {
+            a: "div",
+            b: "html",
+            c: "document",
+            d: "head"
+        },
+        answer: "html"
+    },
+
+    {
+        question: "Which term describes nodes with the same parent?",
+        Option: {
+            a: "siblings",
+            b: "cousins",
+            c: "neighbors",
+            d: "peers"
+        },
+        answer: "siblings"
+    },
+
+    {
+        question: "Which property references the first child node of an element?",
+        Option: {
+            a: "firstChild",
+            b: "childNodes[0]",
+            c: "both of the above",
+            d: "firstElementOnly"
+        },
+        answer: "both of the above"
+    },
+
+    {
+        question: "Which method narrows tag selection to within a parent element?",
+        Option: {
+            a: "document.querySelectorAll with :scope",
+            b: "parent.getElementsByTagName(\"p\")",
+            c: "document.getElementsByTagName(\"p\") always",
+            d: "You cannot narrow selection"
+        },
+        answer: "parent.getElementsByTagName(\"p\")"
+    },
+
+    {
+        question: "Which event pair is better than mouseover/mouseout for avoiding bubbling issues?",
+        Option: {
+            a: "mouseenter / mouseleave",
+            b: "mousemove / mouseup",
+            c: "mousedown / mouseup",
+            d: "mouseover / mouseout"
+        },
+        answer: "mouseenter / mouseleave"
+    },
+
+    {
+        question: "What is a drawback of modifying many inline styles directly from JS?",
+        Option: {
+            a: "It is impossible",
+            b: "It can be harder to maintain vs toggling classes and using CSS",
+            c: "Inline styles always win and are preferred",
+            d: "They are ignored by browsers"
+        },
+        answer: "It can be harder to maintain vs toggling classes and using CSS"
+    },
+
+    {
+        question: "How would you set multiple styles safely while preserving existing styles?",
+        Option: {
+            a: "element.style.cssText += \"font-weight:bold;\"",
+            b: "element.style = \"...\"",
+            c: "element.setAttribute(\"style\",\"...\")",
+            d: "Replace the element entirely"
+        },
+        answer: "element.style.cssText += \"font-weight:bold;\""
+    },
+
+    {
+        question: "document.getElementById(\"i12\").onmouseover = swapPic; — what must swapPic do?",
+        Option: {
+            a: "change source: document.getElementById(\"i12\").src = \"x.jpg\"",
+            b: "return true",
+            c: "call alert() only",
+            d: "create a new image tag and append it"
+        },
+        answer: "change source: document.getElementById(\"i12\").src = \"x.jpg\""
+    },
+
+    {
+        question: "What is a benefit of changing classes instead of src for swapping visuals?",
+        Option: {
+            a: "Allows CSS transitions and toggles multiple style changes",
+            b: "Classes are only for text",
+            c: "Class changes break images",
+            d: "None — src is always better"
+        },
+        answer: "Allows CSS transitions and toggles multiple style changes"
+    },
+
+    {
+        question: "Which property returns a live DOMTokenList of classes?",
+        Option: {
+            a: "element.classes",
+            b: "element.classList",
+            c: "element.classNames",
+            d: "element.getClassList()"
+        },
+        answer: "element.classList"
+    },
+
+    {
+        question: "Why use class toggling for image state instead of changing src directly?",
+        Option: {
+            a: "It keeps logic and styling separated and enables CSS effects",
+            b: "It prevents images from loading",
+            c: "It is required by browsers",
+            d: "It is slower"
+        },
+        answer: "It keeps logic and styling separated and enables CSS effects"
+    },
+
+    {
+        question: "Which event fires continuously as the mouse moves?",
+        Option: {
+            a: "mouseover",
+            b: "mousemove",
+            c: "mouseenter",
+            d: "mousedown"
+        },
+        answer: "mousemove"
+    },
+
+    {
+        question: "Which event fires when an element gains focus?",
+        Option: {
+            a: "onblur",
+            b: "onchange",
+            c: "onfocus",
+            d: "oninput"
+        },
+        answer: "onfocus"
+    },
+
+    {
+        question: "What does Array.from(document.getElementsByTagName(\"p\")) do?",
+        Option: {
+            a: "Returns a live collection",
+            b: "Converts the collection into a static array snapshot",
+            c: "Deletes all <p> elements",
+            d: "Returns null"
+        },
+        answer: "Converts the collection into a static array snapshot"
+    },
+
+    {
+        question: "Which DOM property ignores text nodes and returns only elements?",
+        Option: {
+            a: "childNodes",
+            b: "children",
+            c: "firstChild",
+            d: "nodeList"
+        },
+        answer: "children"
+    },
+
+    {
+        question: "Which property returns the last element child only?",
+        Option: {
+            a: "lastChild",
+            b: "lastNode",
+            c: "lastElementChild",
+            d: "finalChild"
+        },
+        answer: "lastElementChild"
+    },
+
+    {
+        question: "Which approach best prevents JavaScript from running before the DOM is ready?",
+        Option: {
+            a: "Place script in <head> without attributes",
+            b: "Use defer attribute or place script before </body>",
+            c: "Use inline scripts only",
+            d: "Use eval()"
+        },
+        answer: "Use defer attribute or place script before </body>"
     }
 ];
 
@@ -305,29 +820,29 @@ function loadConfirm() {
     let email = ipEmail.value.trim();
     let inst = ipInst.value.trim();
 
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    if (!name || !roll || !email || !inst) {
-        Swal.fire({
-            title: 'Please! Fill all the Details',
-            icon: 'warning',
-            // customClass: {
-            //     popup: 'custom-alert',
-            // }
-        });
-        return;
-    }
+    // if (!name || !roll || !email || !inst) {
+    //     Swal.fire({
+    //         title: 'Please! Fill all the Details',
+    //         icon: 'warning',
+    //         // customClass: {
+    //         //     popup: 'custom-alert',
+    //         // }
+    //     });
+    //     return;
+    // }
 
-    if (!emailRegex.test(email)) {
-        Swal.fire({
-            title: 'Invalid Email',
-            icon: 'error',
-            // customClass: {
-            //     popup: 'custom-alert',
-            // }
-        });
-        return;
-    }
+    // if (!emailRegex.test(email)) {
+    //     Swal.fire({
+    //         title: 'Invalid Email',
+    //         icon: 'error',
+    //         // customClass: {
+    //         //     popup: 'custom-alert',
+    //         // }
+    //     });
+    //     return;
+    // }
 
     cpName.textContent = name;
     cpRoll.textContent = roll;
@@ -341,6 +856,8 @@ function loadConfirm() {
     rpRoll.textContent = roll;
     rpEmail.textContent = email;
     rpInst.textContent = inst;
+
+    shuffleQues();
 }
 
 
@@ -349,9 +866,8 @@ function loadConfirm() {
 
 function loadQuiz() {
 
-        ttlq.textContent = 69;                // just for the meme
-    // ttlq.textContent = quesArray.length;                // just for the meme
-    
+    ttlq.textContent = quesArray.length;
+
     confirmPage.classList.add("d-none");
     quizPage.classList.remove("d-none");
 
@@ -366,64 +882,24 @@ function loadQuiz() {
 
     let optC = opt.children;
 
-    // let s = Math.floor(Math.random() * 4) +1;
-
-    // for (let li of optC) {
-    //     li.textContent        
-    // }
-
-    // for (let i = 0; i < array.length; i++) {
-    //     for (let j = 0; j < array.length; j++) {
-    //         if (i == j) {
-    //             console.log("noooo");
-    //         }            
-    //     }        
-    // }
-
     let arr = [0, 1, 2, 3];
+    for (let i = arr.length - 1; i > 0; i--) {
 
-    // let r1 = Math.floor(Math.random() * 3);
-    // let r2 = Math.floor(Math.random() * 3);
-    // let r3 = Math.floor(Math.random() * 3);
+        if (counter != 0) {
 
-    // let c1 = arr.splice(r1 , 1);
-    // let c2 = arr.splice(r2 , 1);
-    // let c3 = arr.splice(r3 , 1);
+            let r = Math.floor(Math.random() * (i + 1));
 
-    // arr.push(c1[0]);
-    // arr.push(c2[0]);
-    // arr.push(c3[0]);
-
-    // console.log(r1);
-    // console.log(r2);
-    // console.log(r3);
-    // console.log(arr);
-
-
-
-
-    for (let i = arr.length; i > 0; i--) {
-
-        let r = Math.floor(Math.random() * i);
-        let copy = arr.slice(0);
-        // let c = arr.splice(r , 1);
-        // arr.push(c[0]);
-
-        copy[i] = arr[r];
-        copy[r] = arr[i];
-
-        console.log(copy);
+            let temp = arr[i];
+            arr[i] = arr[r];
+            arr[r] = temp;
+            console.log(arr);
+        }
     }
 
-
-
-
-
-
-    optC[0].textContent = q.Option.a;
-    optC[1].textContent = q.Option.b;
-    optC[2].textContent = q.Option.c;
-    optC[3].textContent = q.Option.d;
+    optC[arr[0]].textContent = q.Option.a;
+    optC[arr[1]].textContent = q.Option.b;
+    optC[arr[2]].textContent = q.Option.c;
+    optC[arr[3]].textContent = q.Option.d;
 
     for (const li of optC) {
         li.classList.remove("crct-Ans", "wrong-Ans");
@@ -474,6 +950,21 @@ function loadResult() {
     wa.textContent = wrongAns;
     let ckPers = Math.floor((correctAns / quesArray.length) * 100);
     per.textContent = ckPers + "%";
+}
+
+
+
+
+function shuffleQues() {
+    for (let i = quesArray.length - 1; i > 1; i--) {
+
+        let r = Math.floor(Math.random() * (i)) + 1;
+
+        let temp = quesArray[i];
+        quesArray[i] = quesArray[r];
+        quesArray[r] = temp;
+        console.log(quesArray);
+    }
 }
 
 
