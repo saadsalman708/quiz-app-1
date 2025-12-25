@@ -1,5 +1,103 @@
-/* .dis-Btn {            this is for styling disable next button
+* {
+    user-select: none;
+    /* border: 1px solid gray; */
+}
 
+.wrapper {
+    min-height: 100vh;
+    min-height: 100dvh;
+    color: #fff;
+    background-color: #242629;
+}
+
+
+
+
+
+.page {
+    width: 540px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+/* .start-page h1 {
+    font-size: 4rem;
 } */
 
+.st-btn,
+.int-btn,
+.cnf-btn,
+.qz-btn {
+    background-color: #67BA49;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+}
 
+.st-btn:hover,
+.int-btn:hover,
+.cnf-btn:hover,
+.qz-btn:hover {
+    color: #fff;
+    background-color: #1C8E0D;
+}
+
+.qz-btn {
+    padding: .8rem 2rem;
+}
+
+.dis-Btn {
+    background-color: #bfe7b0;
+}
+
+.dis-Btn:hover {
+    color: #8AA680;
+    background-color: #bfe7b0;
+}
+
+
+
+input {
+    color: #fff;
+    background-color: #3C3C3C;
+    height: 3rem;
+    border: none;
+    border-radius: .6rem;
+    padding-left: 1rem;
+}
+
+input:focus {
+    outline: 2px solid #bfe7b0;
+}
+
+
+
+li {
+    list-style: none;
+    border: 2px solid #63676e;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+li:hover {
+    background-color: #63676e;
+}

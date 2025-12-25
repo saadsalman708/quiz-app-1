@@ -11,27 +11,29 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex justify-content-center pt-5">
 
 
 
         <!-- Start page -->
-        <div class="start-page">
+        <div class="start-page h-75 page d-flex d-none flex-column justify-content-center text-center gap-2 px-4">
             <h1>Quiz App</h1>
-            <p>Start the easiest javascript quiz. which a lot of people find hard.</p>
-            <button class="st-btn">Start the Quiz</button>
+            <p class="mb-4 mb-md-5 mb-lg-5">Start the easiest javascript quiz. which a lot of people find hard.</p>
+            <button class="st-btn mx-auto">Start the Quiz</button>
         </div>
 
 
 
+
+        
         <!-- Student detail input page -->
-        <div class="input-page d-none">
-            <h2>Fill The Details</h2>
+        <div class="input-page h-75 page d-flex d-none flex-column justify-content-center gap-2 px-3">
+            <h2 class="mb-4">Fill The Details</h2>
             <input id="ip-name" type="text" placeholder="Enter your Name">
             <input id="ip-roll" type="text" placeholder="Enter your Roll No">
             <input id="ip-email" type="text" placeholder="Enter your Email">
             <input id="ip-inst" type="text" placeholder="Enter your Institute Name">
-            <button class="int-btn">Submit</button>
+            <button class="int-btn px-5 mt-4 mx-3">Submit</button>
         </div>
 
 
@@ -39,14 +41,21 @@
 
 
         <!-- detail confirm page -->
-        <div class="confirm-page d-none">
-            <span class="cp-name"></span>
-            <span class="cp-roll"></span>
-            <span class="cp-email"></span>
-            <span class="cp-inst"></span>
+        <div class="confirm-page page d-flex d-noe flex-column gap-4 px-4">
+            <h2>Confirm your details</h2>
+            <div class="row fs-5">
+                <p class="col-4 col-md-3 col-lg-3">Name: </p>
+                <span class="cp-name col-8 col-md-9 col-lg-9"></span>
+                <p class="col-4 col-md-3 col-lg-3">Email: </p>
+                <span class="cp-email col-8 col-md-9 col-lg-9"></span>
+                <p class="col-4 col-md-3 col-lg-3">Roll no: </p>
+                <span class="cp-roll col-8 col-md-9 col-lg-9"></span>
+                <p class="col-4 col-md-3 col-lg-3">Institute: </p>
+                <span class="cp-inst col-8 col-md-9 col-lg-9"></span>
+            </div>
             <!-- <button>Edit Details</button>       i'll add this feature later on            
         <button>Confirm and Start</button>              -->
-            <button class="cnf-btn">Start the Quiz</button>
+            <button class="cnf-btn me-auto">Start the Quiz</button>
         </div>
 
 
@@ -54,18 +63,18 @@
 
 
         <!-- quiz page -->
-        <div class="quiz-page d-none">
+        <div class="quiz-page page d-flex flex-column d-none gap-4 px-4">
             <div>
                 <h5>Question <span class="crt-q"></span> / <span class="ttl-q"></span></h5>
-                <p class="que"></p>
+                <p class="que fs-5 lh-lg t-4"></p>
             </div>
-            <ul class="opt">
+            <ul class="opt d-flex flex-column gap-2 p-0">
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
-            <button class="qz-btn">Next</button>
+            <button class="qz-btn me-auto">Next</button>
         </div>
 
 
@@ -73,22 +82,31 @@
 
 
         <!-- result page -->
-        <div class="result-page d-none">
-            <h2>Quiz Result</h2>
+        <div class="result-page d-none px-4">
+            <h2 class="text-center mb-4">Quiz Result</h2>
 
-            <div class="std-detail">
-                <p>Name: <span class="rp-name"></span></p>
-                <p>Email: <span class="rp-email"></span></p>
-                <p>Roll no: <span class="rp-roll"></span></p>
-                <p>Institute: <span class="rp-inst"></span></p>
+            <div class="std-detail row fs-5">
+                <p class="col-5 col-md-3 col-lg-3">Name: </p>
+                <span class="rp-name col-7 col-md-9 col-lg-9"></span>
+                <p class="col-5 col-md-3 col-lg-3">Email: </p>
+                <span class="rp-email col-7 col-md-9 col-lg-9"></span>
+                <p class="col-5 col-md-3 col-lg-3">Roll no: </p>
+                <span class="rp-roll col-7 col-md-9 col-lg-9"></span>
+                <p class="col-5 col-md-3 col-lg-3">Institute: </p>
+                <span class="rp-inst col-7 col-md-9 col-lg-9"></span>
             </div>
 
-            <div class="stats">
-                <p>Total Question: <span class="aq"></span></p>
-                <p>Correct: <span class="ca"></span></p>
-                <p>Wrong: <span class="wa"></span></p>
-                <p>Percentage: <span class="per"></span></p>
+            <div class="std-stats row fs-5">
+                <p class="col-5 col-md-3 col-lg-3">Total Question: </p>
+                <span class="aq col-7 col-md-9 col-lg-9"></span>
+                <p class="col-5 col-md-3 col-lg-3">Correct:  </p>
+                <span class="ca col-7 col-md-9 col-lg-9"></span>
+                <p class="col-5 col-md-3 col-lg-3">Wrong: </p>
+                <span class="wa col-7 col-md-9 col-lg-9"></span>
+                <p class="col-5 col-md-3 col-lg-3">Percentage: </p>
+                <span class="per col-7 col-md-9 col-lg-9"></span>
             </div>
+
         </div>
 
     </div>

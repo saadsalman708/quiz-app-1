@@ -820,29 +820,29 @@ function loadConfirm() {
     let email = ipEmail.value.trim();
     let inst = ipInst.value.trim();
 
-    // const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    // if (!name || !roll || !email || !inst) {
-    //     Swal.fire({
-    //         title: 'Please! Fill all the Details',
-    //         icon: 'warning',
-    //         // customClass: {
-    //         //     popup: 'custom-alert',
-    //         // }
-    //     });
-    //     return;
-    // }
+    if (!name || !roll || !email || !inst) {
+        Swal.fire({
+            title: 'Please! Fill all the Details',
+            icon: 'warning',
+            // customClass: {
+            //     popup: 'custom-alert',
+            // }
+        });
+        return;
+    }
 
-    // if (!emailRegex.test(email)) {
-    //     Swal.fire({
-    //         title: 'Invalid Email',
-    //         icon: 'error',
-    //         // customClass: {
-    //         //     popup: 'custom-alert',
-    //         // }
-    //     });
-    //     return;
-    // }
+    if (!emailRegex.test(email)) {
+        Swal.fire({
+            title: 'Invalid Email',
+            icon: 'error',
+            // customClass: {
+            //     popup: 'custom-alert',
+            // }
+        });
+        return;
+    }
 
     cpName.textContent = name;
     cpRoll.textContent = roll;
@@ -878,7 +878,7 @@ function loadQuiz() {
 
     let q = quesArray[counter];
 
-    que.textContent = q.question;
+    que.innerHTML = `<span class="fw-bold me-1">Q${counter + 1}.</span>  ${q.question}`;
 
     let optC = opt.children;
 
