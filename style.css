@@ -34,13 +34,13 @@ h2 {
 .int-btn,
 .cnf-btn,
 .qz-btn {
-    color: #fff;
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-size: 1.25rem;
     font-weight: bold;
     border: none;
     background-color: #67BA49;
+    color: #fff;
 }
 
 .st-btn:hover,
@@ -53,10 +53,12 @@ h2 {
 
 .qz-btn {
     padding: .8rem 2rem;
+    background-color: #78d756;
 }
 
 .dis-Btn {
     background-color: #bfe7b0;
+    color: #000;
 }
 
 .dis-Btn:hover {
