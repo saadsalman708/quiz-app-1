@@ -826,9 +826,9 @@ function loadConfirm() {
         Swal.fire({
             title: 'Please! Fill all the Details',
             icon: 'warning',
-            // customClass: {
-            //     popup: 'custom-alert',
-            // }
+            customClass: {
+                popup: 'custom-alert',
+            }
         });
         return;
     }
@@ -837,9 +837,9 @@ function loadConfirm() {
         Swal.fire({
             title: 'Invalid Email',
             icon: 'error',
-            // customClass: {
-            //     popup: 'custom-alert',
-            // }
+            customClass: {
+                popup: 'custom-alert',
+            }
         });
         return;
     }
@@ -902,6 +902,7 @@ function loadQuiz() {
     optC[arr[3]].textContent = q.Option.d;
 
     for (const li of optC) {
+        li.classList.add("li-Hover");
         li.classList.remove("crct-Ans", "wrong-Ans");
         li.setAttribute("onclick", "selectLi(this)");
     }
@@ -916,6 +917,7 @@ function selectLi(ele) {
     let optC = opt.children;
 
     for (const li of optC) {
+        li.classList.remove("li-Hover");
         li.removeAttribute("onclick");
     }
 
